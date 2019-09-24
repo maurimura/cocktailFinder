@@ -1,22 +1,12 @@
-name: CocktailFined
-on:
-  push:
-    branches:
-      - master
+name: CocktailFinder
+on: [push]
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [10.x]
     steps:
-    - uses: actions/checkout@master
+    - name: Checkout
+      uses: actions/checkout@master
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-      
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@master
       env:
