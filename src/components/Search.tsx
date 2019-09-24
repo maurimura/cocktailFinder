@@ -70,7 +70,7 @@ const Search: React.FC<Search> = ({ hasContent, isLoading, ...props }) => {
 
       {query.length > 0 && !isLoading && (
         <div className="icon-wrapper end">
-          <button onClick={handleClear}>
+          <button data-testid="clear" onClick={handleClear}>
             <Close />
           </button>
         </div>

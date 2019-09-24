@@ -15,7 +15,7 @@ const DrinkList: React.FC<DrinkListProps> = ({ drinks, isLoading,...props }) => 
   return (
     <div className="drink-list-container">
       {isLoading && drinks.length === 0 && <Loader />}
-      {drinks.length > 0 && <ul className="drink-list">{drinks.map(DrinkCard)}</ul>}
+      {drinks.length > 0 && <ul data-testid="drink-list" className="drink-list">{drinks.map(DrinkCard)}</ul>}
     </div>
   );
 };

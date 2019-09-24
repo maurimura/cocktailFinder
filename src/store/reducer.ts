@@ -6,7 +6,7 @@ import {
   CLEAR
 } from "./types";
 
-const initialState: AppState = {
+export const initialState: AppState = {
   drinks: [],
   isLoading: false
 };

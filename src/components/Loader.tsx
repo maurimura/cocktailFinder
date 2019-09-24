@@ -3,7 +3,7 @@ import "./Loader.scss";
 
 const Loader: React.FC = props => {
   return (
-    <div className="loader" />
+    <div role="loader" className="loader" />
   );
 };
 

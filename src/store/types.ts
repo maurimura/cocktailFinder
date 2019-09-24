@@ -31,6 +31,7 @@ export interface Drink {
   strDrinkThumb: string;
 }
 
+
 export interface AppState {
     drinks: Drink[],
     isLoading: boolean,
