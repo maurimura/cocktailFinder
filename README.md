@@ -33,3 +33,11 @@ Your app is ready to be deployed!
     - React-redux
     - Redux-thunk
     - node-sass
+
+## How the list can be more performant if has to manage a big amount of data?
+
+We can use a technique called "windowing", with this technique, we only render a smaller subsete of the list rows at any given time. It also can reduce the time it takes to re-render the components as well as the number of DOM nodes created.
+
+There are some libraries that can help whit that, such as [react-window](https://react-window.now.sh/).
+
+More info can be found here: https://reactjs.org/docs/optimizing-performance.html#virtualize-long-lists
