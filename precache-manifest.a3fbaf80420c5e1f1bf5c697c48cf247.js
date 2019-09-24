@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "959a95356183f1996cf42303554e4cde",
+    "revision": "490548c0079c816fbafc65bcd0c66496",
     "url": "/cocktailFinder/index.html"
   },
   {
-    "revision": "d875c0ad5dd50745d2cd",
-    "url": "/cocktailFinder/static/css/main.c7f023a9.chunk.css"
+    "revision": "f551f2269697ce07a328",
+    "url": "/cocktailFinder/static/css/main.89745e20.chunk.css"
   },
   {
-    "revision": "8b6814bc4d359654840b",
-    "url": "/cocktailFinder/static/js/2.2eac5c42.chunk.js"
+    "revision": "8c16f2565d52ccf795b0",
+    "url": "/cocktailFinder/static/js/2.41f0156a.chunk.js"
   },
   {
-    "revision": "d875c0ad5dd50745d2cd",
-    "url": "/cocktailFinder/static/js/main.344d1bfc.chunk.js"
+    "revision": "f551f2269697ce07a328",
+    "url": "/cocktailFinder/static/js/main.a718c0b1.chunk.js"
   },
   {
-    "revision": "1041028e04768c72239f",
-    "url": "/cocktailFinder/static/js/runtime-main.59b3556e.js"
+    "revision": "deaa046b3ff2e5279121",
+    "url": "/cocktailFinder/static/js/runtime-main.4a6cde03.js"
   },
   {
     "revision": "777b93c6d5a7b86081144f8d0d3ca1d8",
