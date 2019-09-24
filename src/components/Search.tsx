@@ -48,7 +48,11 @@ const Search: React.FC<Search> = ({ hasContent, isLoading, ...props }) => {
       <div className="icon-wrapper start">
         <SearchIcon />
       </div>
+      <label className="hidden" htmlFor="search-input" aria-label="Search cocktail">
+        Search cocktail
+      </label>
       <input
+        name="search-input"
         className="search-input"
         placeholder="Search your favorite cocktail"
         value={query}
