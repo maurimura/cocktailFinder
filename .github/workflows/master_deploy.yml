@@ -8,18 +8,20 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: 10.x
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@master
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+        
     - name: Install Packages
       run: npm install
-    - name: Deploy to GH Pages
-      run: |
-        git config --global user.email "maurimura@gmail.com>"
-        git config --global user.name "maurimura7>"
-        git remote set-url origin https://81e9d7899270ae71f2839b2c6f42f44e65a02e50@github.com/maurimura7/cocktailFinder.git
-        npm run deploy
+      
+    - name: deploy
+      uses: peaceiris/actions-gh-pages@v2.3.2
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACCESS_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
