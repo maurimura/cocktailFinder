@@ -1,5 +1,5 @@
 # Cocktail Finder
-
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FMaurimura7%2FcocktailFinder%2Fbadge%3Fref%3Dmaster&style=flat)](https://actions-badge.atrox.dev/Maurimura7/cocktailFinder/goto?ref=master)
 ### Demo
 You can find a live demo here: https://maurimura7.github.io/cocktailFinder
 

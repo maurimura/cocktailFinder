@@ -41,14 +41,20 @@ const Search: React.FC<Search> = ({ hasContent, isLoading, ...props }) => {
         hasContent || focused ? " top" : " center"
       }`}
     >
-      <div className={`logo-wrapper ${(hasContent || focused) ? ' hide' : ''}`}>
+      <div className={`logo-wrapper ${hasContent || focused ? " hide" : ""}`}>
         <Logo />
-        <p><b>Cocktail</b>Finder</p>
+        <p>
+          <b>Cocktail</b>Finder
+        </p>
       </div>
       <div className="icon-wrapper start">
         <SearchIcon />
       </div>
-      <label className="hidden" htmlFor="search-input" aria-label="Search cocktail">
+      <label
+        className="hidden"
+        htmlFor="search-input"
+        aria-label="Search cocktail"
+      >
         Search cocktail
       </label>
       <input
@@ -61,6 +67,7 @@ const Search: React.FC<Search> = ({ hasContent, isLoading, ...props }) => {
         onFocus={handleFocus}
         onBlur={handleBlur}
       />
+
       {query.length > 0 && !isLoading && (
         <div className="icon-wrapper end">
           <button onClick={handleClear}>
@@ -68,6 +75,7 @@ const Search: React.FC<Search> = ({ hasContent, isLoading, ...props }) => {
           </button>
         </div>
       )}
+
       {hasContent && isLoading && (
         <div className="loader-wrapper">
           <Loader />
