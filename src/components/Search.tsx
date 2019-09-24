@@ -47,9 +47,12 @@ const Search: React.FC<Search> = ({ hasContent, isLoading, ...props }) => {
           <b>Cocktail</b>Finder
         </p>
       </div>
+      
       <div className="icon-wrapper start">
         <SearchIcon />
       </div>
+      
+      {/* For accessibility only  */}
       <label
         className="hidden"
         htmlFor="search-input"
@@ -57,6 +60,7 @@ const Search: React.FC<Search> = ({ hasContent, isLoading, ...props }) => {
       >
         Search cocktail
       </label>
+      
       <input
         id="search-input"
         name="search-input"

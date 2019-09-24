@@ -24,7 +24,6 @@ export type DrinksActionTypes = RequestDrinksAction | RecieveDrinksAction | Clea
 
 
 // State types
-
 export interface Drink {
   idDrink: string;
   strDrink: string;
