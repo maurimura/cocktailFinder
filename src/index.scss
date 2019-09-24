@@ -1,0 +1,29 @@
+@import './theme.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "monospace","Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(110deg, $primary-background-color 60%, $secondary-background-color 60%);
+  overflow: hidden;
+
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto; 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}

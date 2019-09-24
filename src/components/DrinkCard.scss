@@ -1,0 +1,39 @@
+@import '../theme.scss';
+
+.card {
+  display: flex;
+  background-color: $light-color;
+  margin: 0.5em 0;
+  height: 10em;
+  border: 1px solid $primary-text-color;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px 2px #466b5a;
+}
+
+.card-image {
+  height: 100%;
+  border: 1px solid $primary-text-color;
+  border-radius: 30%;
+}
+
+.card-image-wrapper {
+  flex: 1;
+  height: 75%;
+  align-self: center;
+  padding: 0 2em;
+  box-sizing: border-box;
+}
+
+.card-text {
+  flex: 3;
+  align-self: center;
+  font-size: 1.5em;
+  color: $primary-text-color;
+}
+
+@media all and (max-width: 50em) {
+  .card-image-wrapper {
+    padding: 0 1em;
+  }
+}

@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;  
+  margin: auto;
+  max-width: 35em;
+  height: 100%;
+
+}
+
+@media all and (max-width: 50em){
+  .App {
+    max-width: 90vw;
+  }
+};
