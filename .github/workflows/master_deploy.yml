@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: 10.x
+        node-version: [10.x]
     steps:
     - uses: actions/checkout@master
 
@@ -16,12 +16,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-        
-    - name: Install Packages
-      run: npm install
       
-    - name: deploy
-      uses: peaceiris/actions-gh-pages@v2.3.2
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@master
       env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACCESS_TOKEN }}
-        PUBLISH_BRANCH: gh-pages
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BASE_BRANCH: master # The branch the action should deploy from.
+        BRANCH: gh-pages # The branch the action should deploy to.
+        FOLDER: build # The folder the action should deploy.
+        BUILD_SCRIPT: npm install && npm run deploy # The build script the action should run prior to deploying.
