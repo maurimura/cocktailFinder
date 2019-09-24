@@ -4,6 +4,7 @@ import { fetchDrinks, clear } from "../store/actions";
 import Loader from "./Loader";
 import { ReactComponent as Close } from "../close.svg";
 import { ReactComponent as SearchIcon } from "../search.svg";
+import { ReactComponent as Logo } from "../logo.svg";
 import "./Search.scss";
 
 interface Search {
@@ -40,6 +41,10 @@ const Search: React.FC<Search> = ({ hasContent, isLoading, ...props }) => {
         hasContent || focused ? " top" : " center"
       }`}
     >
+      <div className={`logo-wrapper ${(hasContent || focused) ? ' hide' : ''}`}>
+        <Logo />
+        <p><b>Cocktail</b>Finder</p>
+      </div>
       <div className="icon-wrapper start">
         <SearchIcon />
       </div>

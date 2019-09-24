@@ -32,7 +32,8 @@
   /* background-color: #d0f4ea; */
 }
 
-.search-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.search-input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #463e48;
   opacity: 1; /* Firefox */
 }
@@ -65,6 +66,24 @@
 .loader-wrapper .loader {
   font-size: 3px;
   color: #463e48;
+}
+
+.logo-wrapper {
+  position: absolute;
+  left: 50%;
+  padding-bottom: 2em;
+  opacity: 1;
+  transition: opacity 300ms ease;
+  transform: translate(-50%, -50%);
+}
+
+.logo-wrapper.hide {
+  opacity: 0;
+}
+
+
+.logo-wrapper svg {
+  height: 5em;
 }
 
 @media all and (max-width: 50em) {
