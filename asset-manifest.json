@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cocktailFinder/static/css/main.8e66ebde.chunk.css",
-    "main.js": "/cocktailFinder/static/js/main.e37ee480.chunk.js",
-    "main.js.map": "/cocktailFinder/static/js/main.e37ee480.chunk.js.map",
+    "main.js": "/cocktailFinder/static/js/main.46b3fc11.chunk.js",
+    "main.js.map": "/cocktailFinder/static/js/main.46b3fc11.chunk.js.map",
     "runtime-main.js": "/cocktailFinder/static/js/runtime-main.4a6cde03.js",
     "runtime-main.js.map": "/cocktailFinder/static/js/runtime-main.4a6cde03.js.map",
     "static/js/2.41f0156a.chunk.js": "/cocktailFinder/static/js/2.41f0156a.chunk.js",
     "static/js/2.41f0156a.chunk.js.map": "/cocktailFinder/static/js/2.41f0156a.chunk.js.map",
     "index.html": "/cocktailFinder/index.html",
-    "precache-manifest.7cc055849d0ab9b1904502c97ace428e.js": "/cocktailFinder/precache-manifest.7cc055849d0ab9b1904502c97ace428e.js",
+    "precache-manifest.048c6c057c066d862153feb122dad9b0.js": "/cocktailFinder/precache-manifest.048c6c057c066d862153feb122dad9b0.js",
     "service-worker.js": "/cocktailFinder/service-worker.js",
     "static/css/main.8e66ebde.chunk.css.map": "/cocktailFinder/static/css/main.8e66ebde.chunk.css.map",
     "static/media/close.777b93c6.svg": "/cocktailFinder/static/media/close.777b93c6.svg",
