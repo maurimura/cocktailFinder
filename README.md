@@ -1,3 +1,8 @@
+# Cocktail Finder
+
+### Demo
+You can find a live demo here: https://maurimura7.github.io/cocktailFinder
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
