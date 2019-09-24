@@ -19,6 +19,10 @@ jobs:
     - name: install
       run: yarn install
 
+    - name: test
+      run: yarn test
+
+
     - name: build
       run: yarn build
 
