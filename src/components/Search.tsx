@@ -52,6 +52,7 @@ const Search: React.FC<Search> = ({ hasContent, isLoading, ...props }) => {
         Search cocktail
       </label>
       <input
+        id="search-input"
         name="search-input"
         className="search-input"
         placeholder="Search your favorite cocktail"
