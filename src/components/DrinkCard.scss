@@ -4,7 +4,6 @@
   display: flex;
   background-color: $light-color;
   margin: 0.5em 0;
-  height: 10em;
   border: 1px solid $primary-text-color;
   border-radius: 3px;
   box-sizing: border-box;
@@ -13,20 +12,27 @@
 
 .card-image {
   height: 100%;
+  margin: 1em;
+  max-height: 10em;
   border: 1px solid $primary-text-color;
   border-radius: 30%;
 }
 
 .card-image-wrapper {
   flex: 1;
-  height: 75%;
   align-self: center;
   padding: 0 2em;
   box-sizing: border-box;
 }
 
-.card-text {
+.card-text-container {
   flex: 3;
+  display: flex;
+  flex-direction: column;
+  text-align: initial;
+}
+
+.card-text {
   align-self: center;
   font-size: 1.5em;
   color: $primary-text-color;
