@@ -47,7 +47,6 @@ export const fetchDrinks = (
           strIngredients: ingredientsBuilder(rest)
         })
       );
-      console.log(normalizeData);
       return dispatch(setDrinks(normalizeData));
     } catch (error) {
       console.error(error);
@@ -66,12 +65,14 @@ export const clear = (): ClearAction => {
 };
 
 const ingredientsBuilder = (data: any): [string, string][] => {
-  const ingredients = Array(15)
-    .fill(0)
-    .map((_, i) => [
-      data[`strIngredient${i + 1}`] || "",
-      data[`strMeasure${i + 1}`] || ""
-    ])
+  const ingredients: [string, string][] = [...Array<[string, string]>(15)]
+    .map(
+      (_, i) =>
+        [
+          data[`strIngredient${i + 1}`] || "",
+          data[`strMeasure${i + 1}`] || ""
+        ] as [string, string]
+    )
     .filter(ingredient => Boolean(ingredient[1]));
 
   return ingredients;
