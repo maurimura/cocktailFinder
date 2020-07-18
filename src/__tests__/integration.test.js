@@ -29,9 +29,9 @@ test("Loader appears with 3 or more letters", () => {
   const { getByPlaceholderText, queryByRole } = renderWithRedux(<App />);
   const input = getByPlaceholderText(/Search your favorite cocktail/i);
   fireEvent.change(input, { target: { value: "gi" } });
-  expect(queryByRole("loader")).toBeNull();
+  expect(queryByRole("alert")).toBeNull();
   fireEvent.change(input, { target: { value: "gin" } });
-  expect(queryByRole("loader")).toBeTruthy();
+  expect(queryByRole("alert")).toBeTruthy();
 });
 
 test("Clear button", async () => {
