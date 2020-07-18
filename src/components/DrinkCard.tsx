@@ -12,7 +12,7 @@ const DrinkCard: React.FC<Drink> = ({
   const [showInstructions, setShowInstructions] = useState(false);
   const toggleInstructions = () => setShowInstructions(c => !c);
   return (
-    <li key={idDrink} onClick={toggleInstructions}>
+    <li onClick={toggleInstructions}>
       <div className="card">
         <div className="card-image-wrapper">
           <img className="card-image" alt="strDrink" src={strDrinkThumb} />

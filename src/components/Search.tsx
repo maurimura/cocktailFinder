@@ -52,7 +52,6 @@ const Search: React.FC<Search> = ({ hasContent, isLoading, ...props }) => {
         <SearchIcon />
       </div>
       
-      {/* For accessibility only  */}
       <label
         className="hidden"
         htmlFor="search-input"

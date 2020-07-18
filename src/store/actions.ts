@@ -47,14 +47,15 @@ export const fetchDrinks = (
           strIngredients: ingredientsBuilder(rest)
         })
       );
-      return dispatch(setDrinks(normalizeData));
+
+      dispatch(setDrinks(normalizeData));
+      
     } catch (error) {
       console.error(error);
-      // This could be a good place for return an error message
-      return dispatch(setDrinks([]));
+      dispatch(setDrinks([]));
     }
   } else {
-    return dispatch(setDrinks([]));
+    dispatch(setDrinks([]));
   }
 };
 
